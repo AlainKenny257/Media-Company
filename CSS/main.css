@@ -6,11 +6,39 @@
 }
 
 body{
-    background-color: aliceblue;
     height: 100%;
     font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(83, 83, 83);
+    background-color: #FFFFFF;
 }
+
+/* 
+.nav{
+    top: 0;
+} */
+
+
+nav {
+    background-color: #231F20;
+    text-align: right;
+}
+
+nav a {
+    display: inline-block;
+    padding: 20px 40px;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.active{
+    background-color: orange;
+    color: #1d1d1d;
+}
+
+a:hover:not(.active) {
+    color: rgb(235, 154, 4);
+  }
 
 .wrapper{
     max-height: 100%;
@@ -21,19 +49,23 @@ body{
 .form{
     content: "";
     display: flex;
-    padding: 100px;
+    margin: 60px;
+    
 }
 
 .column {
     width: 50%;
+    margin: 20px;
   }
   
 .column1 {
     margin: auto;
     width: 50%;
     padding: 20px;
+    padding-left: 25px;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 50px rgba(61, 61, 61, 0.6);
   }
 
 .column1 input,textarea{
@@ -41,9 +73,10 @@ body{
     padding: 15px 10px;
     font-size: 20px;
     border: none;
-    background-color: rgb(56, 56, 56);
-    margin-top: 4px;
-    margin-bottom: 10px;
+    background-color: #231F20;
+    margin-top: 3px;
+    color: #f2f2f2;
+    margin-bottom: 15px;
     border-radius: 5px;
     font-size: 20px;
 }
@@ -53,39 +86,36 @@ body{
     font-size: 20px;
     border: none;
     color: black;
-    margin-top: 4px;
-    margin-bottom: 10px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 700;
 }
 
 
 .input [type=submit] {
     width: 98%;
     background-color: #2b2b2b;
-    color: white;
+    color: rgb(235, 154, 4);
     padding: 14px 20px;
     border: none;
+    font-weight: 600;
     border-radius: 4px;
     cursor: pointer;
+    transition: 0.3s;
   }
 
 .input [type=submit]:hover {
-    background-color: #1d1d1d;
+    background-color: rgb(235, 154, 4);
+    color: #231F20;
   }
-
-
-
-
-
-
 
 
    /* Footer Section Codes */
 .footersec{
-    position: sticky;
+    width: 100%;
+    position: fixed;
     bottom: 0;
-    background-color: black;
+    background-color: rgb(99, 99, 99);
 }
 
 
@@ -100,7 +130,7 @@ body{
     text-align: center;
     width: 23.5%;
     padding: 0 15px;
-    background-color: blue;
+    /* background-color: blue; */
     float: left;
     color: black;
 }
@@ -109,9 +139,9 @@ body{
 .navlink a{
     margin: 5px 0;
     display: block;
-    font-size: 15px;
+    font-size: 18px;
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: bold;
 }
 
@@ -119,7 +149,7 @@ body{
     margin-bottom: 5px;
     font-size: 30px;
     text-decoration: none;
-    color: white;
+    color: rgb(167, 0, 0);
     font-weight: bold;
 }
 
@@ -149,10 +179,22 @@ body{
 .socials{
     text-align: center;
     width: 23.5%;
-    padding: 0 14px;
-    background-color: rgb(212, 199, 9);
+    padding: 5px 14px;
+    /* background-color: rgb(212, 199, 9); */
     float: left;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+
+.socials h1{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.socials img{
+    width: 40px;
+    height: 40px;
+    padding: 0 10px;
 }
 
 .copy{
@@ -160,4 +202,5 @@ body{
     padding: 10px 0;
     background-color: #1d1d1d;
     font-size: 20px;
+    color: white;
 }
