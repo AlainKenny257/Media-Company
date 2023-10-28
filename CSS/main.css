@@ -57,6 +57,30 @@ a:hover:not(.active) {
     width: 50%;
     margin: 20px;
   }
+
+  .column .maininfo{
+    font-size: 18px;
+  }
+
+  .column .maininfo p{
+    font-weight: 500;
+  }
+
+  .column .contactinfo{
+    font-size: 20px;
+    margin-top: 25px;
+    background-color: #e2e2e2;
+    width: 60%;
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  .column .contactinfo h3{
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
+
   
 .column1 {
     margin: auto;
