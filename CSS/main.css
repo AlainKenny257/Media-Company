@@ -5,22 +5,62 @@
     padding: 0;
 }
 
+.home{
+    background-image: url(/Images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 body{
     height: 100%;
     font-family:Arial, Helvetica, sans-serif;
     background-color: #FFFFFF;
 }
 
-/* 
-.nav{
-    top: 0;
-} */
-
-
 nav {
     background-color: #231F20;
     text-align: right;
+    position: sticky;
+    top: 0;
 }
+
+
+section{
+    height: 900px;
+    padding: 10px;
+}
+
+section .heading{
+    padding: 25px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.section-content{
+    color: #e2e2e2;
+    max-width: 100%;
+    content: "";
+    float: left;
+    display: flex;
+    margin-top: 30px;
+}
+
+.service-info{
+    width: 25%;
+    padding: 12px;
+    text-align: center;
+    text-justify: initial;
+    display: grid;
+    background-color: #2b2b2b;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+.service-info h1{
+    margin-bottom: 15px;
+}
+
+
 
 nav a {
     display: inline-block;
@@ -28,7 +68,7 @@ nav a {
     color: #FFFFFF;
     text-decoration: none;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .active{
@@ -50,7 +90,6 @@ a:hover:not(.active) {
     content: "";
     display: flex;
     margin: 60px;
-    
 }
 
 .column {
@@ -68,7 +107,7 @@ a:hover:not(.active) {
 
   .column .contactinfo{
     font-size: 20px;
-    margin-top: 25px;
+    margin-top: 20px;
     background-color: #e2e2e2;
     width: 60%;
     padding: 10px 20px;
@@ -85,7 +124,7 @@ a:hover:not(.active) {
 .column1 {
     margin: auto;
     width: 50%;
-    padding: 20px;
+    padding: 30px 10px;
     padding-left: 25px;
     border-radius: 5px;
     background-color: #FFFFFF;
@@ -107,7 +146,6 @@ a:hover:not(.active) {
 
 .column1 label{
     width: 95%;
-    font-size: 20px;
     border: none;
     color: black;
     border-radius: 5px;
@@ -137,9 +175,11 @@ a:hover:not(.active) {
    /* Footer Section Codes */
 .footersec{
     width: 100%;
-    position: fixed;
+    height: 400px;
+    position: static;
     bottom: 0;
-    background-color: rgb(99, 99, 99);
+    background-color:#1d1d1d;
+    padding: 50px 0;
 }
 
 
@@ -147,7 +187,6 @@ a:hover:not(.active) {
     content: "";
     display: table;
     clear: both;
-    margin: 0 10px;
   }
 
 .navlink{
@@ -156,24 +195,16 @@ a:hover:not(.active) {
     padding: 0 15px;
     /* background-color: blue; */
     float: left;
-    color: black;
+    color:#e2e2e2;
 }
 
 
 .navlink a{
-    margin: 5px 0;
+    margin: 25px 0;
     display: block;
-    font-size: 18px;
+    font-size: 20px;
+    color: #e2e2e2;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-}
-
-.navlink h1{
-    margin-bottom: 5px;
-    font-size: 30px;
-    text-decoration: none;
-    color: rgb(167, 0, 0);
     font-weight: bold;
 }
 
@@ -186,16 +217,27 @@ a:hover:not(.active) {
     font-size: 20px;
     text-align: center;
     padding: 0 14px;
-    background-color: rgb(16, 142, 192);
     float: left;
-    color: black;
+    color:#e2e2e2;
+}
+
+h1{
+    font-size: 40px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color:#ebc002;
+}
+
+h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #e2e2e2;
 }
 
 .office{
     text-align: center;
     width: 23.5%;
     padding:  0 14px;
-    background-color: rgb(0, 255, 128);
     float: left;
     color: black;
 }
@@ -215,6 +257,10 @@ a:hover:not(.active) {
     margin-bottom: 10px;
 }
 
+.contactinfo h3{
+    color: #231F20;
+}
+
 .socials img{
     width: 40px;
     height: 40px;
@@ -223,8 +269,11 @@ a:hover:not(.active) {
 
 .copy{
     text-align: center;
-    padding: 10px 0;
-    background-color: #1d1d1d;
+    padding: 25px 0;
+    background-color:#1d1d1d;
     font-size: 20px;
-    color: white;
+    color:#666666;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid rgb(255, 255, 255);
 }
