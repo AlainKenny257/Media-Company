@@ -9,6 +9,7 @@
     background-image: url(/Images/bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    font-size: 100%;
 }
 
 body{
@@ -26,41 +27,69 @@ nav {
 
 
 section{
-    height: 910px;
-    padding: 10px;
+    height: 930px;
+    max-width: 100%;
 }
 
 section .heading{
     padding: 25px;
     text-align: center;
-    font-size: 25px;
+    font-size: 1.5em;
+    margin: 5px 0;
 }
 
-.section-content{
-    color: #e2e2e2;
+.container{
     max-width: 100%;
+    margin-bottom: 80px;
+}
+
+.achieve{
+    background-color:#1d1d1d;
+}
+
+section .section-content{
+    max-width: 100%;
+    color: #e2e2e2;
     content: "";
-    float: left;
-    display: flex;
-    box-sizing: border-box;
-    margin-top: 30px;
+    clear:both;
+    display: table;
+    padding: 0 0 0 60px;
 }
 
 .service-info{
-    width: 25%;
-    padding: 12px;
-    text-align: center;
-    text-justify: initial;
-    display: grid;
+    max-width: 30%;
+    padding: 15px 10px;
     background-color:#1d1d1d;
-    margin: 10px;
-    border-radius: 5px;
+    margin: 10px 10px;
+    float: left;
+    color: #e2e2e2;
+    text-align: center;
+    border-radius: 10px;
 }
+
 
 .service-info h1{
     margin-bottom: 15px;
 }
 
+.achievement-info{
+    max-width: 40%;
+    padding: 5px 35px 35px 40px;
+    margin: 0 60px;
+    float: left;
+    color: #e2e2e2;
+    text-align: center;
+}
+
+.achievement-info{
+    color:#e2e2e2;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.achievement-info h1{
+    margin-bottom: 2px;
+}
 
 
 nav a {
@@ -173,7 +202,7 @@ a:hover:not(.active) {
 
    /* Footer Section Codes */
 .footersec{
-    width: 100%;
+    max-width: 100%;
     height: 300px;
     position: static;
     bottom: 0;
@@ -182,7 +211,7 @@ a:hover:not(.active) {
 }
 
 
-.info:after {
+.info::after {
     content: "";
     display: table;
     clear: both;
@@ -190,7 +219,7 @@ a:hover:not(.active) {
 
 .navlink{
     text-align: center;
-    width: 23.5%;
+    max-width: 23.5%;
     padding: 0 15px;
     /* background-color: blue; */
     float: left;
@@ -221,8 +250,8 @@ a:hover:not(.active) {
 }
 
 h1{
-    font-size: 40px;
-    margin-bottom: 30px;
+    font-size: 1.8em;
+    margin-bottom: 10px;
     font-weight: bold;
     color:#ebc002;
 }
