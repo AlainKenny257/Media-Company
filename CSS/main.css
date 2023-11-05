@@ -40,11 +40,13 @@ section .heading{
 
 .container{
     max-width: 100%;
-    margin-bottom: 80px;
+    margin-bottom: 70px;
 }
 
 .achieve{
     background-color:#1d1d1d;
+    max-width: 100%;
+    margin-bottom: 0;
 }
 
 section .section-content{
@@ -60,13 +62,35 @@ section .section-content{
     max-width: 30%;
     padding: 15px 10px;
     background-color:#1d1d1d;
-    margin: 10px 10px;
+    margin: 10px 10px ;
     float: left;
     color: #e2e2e2;
     text-align: center;
     border-radius: 10px;
 }
 
+.upcoming{
+    background-color:#ebc002;
+    height: 500px;
+    padding: 10px 10px;
+    text-align: center;
+    color: #1d1d1d;
+
+}
+
+.upcoming h1{
+    padding-top: 15px;
+    color: #1d1d1d;
+    font-size: 60px;
+    font-weight: bolder;
+}
+
+.upcoming p{
+    margin-top: 30px;
+    color: #1d1d1d;
+    font-size: 120px;
+    font-weight: bolder;
+}
 
 .service-info h1{
     margin-bottom: 15px;
@@ -99,6 +123,7 @@ nav a {
     text-decoration: none;
     font-weight: bold;
     font-size: 20px;
+    transition: 0.5s;
 }
 
 .active{
