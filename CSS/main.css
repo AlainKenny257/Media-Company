@@ -9,7 +9,7 @@
 .mainheader{
     background-color: #2b2b2bc2;
     padding: 270px 0;
-    height: 100%;
+    height: 80%;
 }
 
 .mainheader h1{
@@ -23,12 +23,14 @@
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
-    font-size: 20px;
+    font-size: 25px;
     color: #f2f2f2;
 }
 
 .home{
     background-image: url(/Images/bg.jpg);
+    height: 1000px;
+    max-width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     font-size: 100%;
@@ -49,26 +51,35 @@ nav {
 
 
 section{
-    height: 930px;
+    height: 100%;
     max-width: 100%;
+    margin-bottom: 5px;
 }
 
 section .heading{
-    padding: 25px;
+    padding: 25px 0;
+    color: #1d1d1d;
     text-align: center;
-    font-size: 1.5em;
-    margin: 5px 0;
+    font-size: 1.8em;
+    margin-bottom: 50px;
 }
 
 .container{
+    padding: 130px 0;
     max-width: 100%;
+    height: 600px;
     margin-bottom: 70px;
 }
 
 .achieve{
     background-color:#1d1d1d;
     max-width: 100%;
+    height: 500px;
     margin-bottom: 0;
+}
+
+.achieve .heading{
+    padding-top: 100px;
 }
 
 section .section-content{
@@ -83,12 +94,25 @@ section .section-content{
 .service-info{
     max-width: 30%;
     padding: 15px 10px;
+    height: 260px;
     background-color:#1d1d1d;
     margin: 10px 10px ;
     float: left;
     color: #e2e2e2;
     text-align: center;
     border-radius: 10px;
+}
+
+.service-info h1{
+    font-size: 40px;
+    padding-bottom: 10px;
+}
+
+.service-info p{
+    font-size: 30px;
+    text-align: left;
+    padding: 0 10px;
+    padding-bottom: 20px;
 }
 
 .upcoming{
@@ -101,14 +125,14 @@ section .section-content{
 }
 
 .upcoming h1{
-    padding-top: 15px;
+    margin-top: 80px;
     color: #1d1d1d;
     font-size: 60px;
     font-weight: bolder;
 }
 
 .upcoming p{
-    margin-top: 30px;
+    margin-top: 50px;
     color: #1d1d1d;
     font-size: 120px;
     font-weight: bolder;
