@@ -50,10 +50,18 @@ nav {
 }
 
 
+.media-nav nav{
+    background-color:#231F20;
+    display: flex;
+}
+.media-nav a{
+    color:#e2e2e2;
+    font-size: 25px;
+}
+
 section{
     height: 100%;
     max-width: 100%;
-    margin-bottom: 5px;
 }
 
 section .heading{
@@ -94,6 +102,7 @@ section .section-content{
     clear:both;
     display: table;
     padding: 0 0 0 60px;
+    margin-bottom: 60px;
 }
 
 .service-info{
@@ -150,15 +159,15 @@ section .section-content{
 #media-content{
     max-width: 100%;
     background-image: url(/Images/bg.jpg);
-    height: 900px;
+    height: 860px;
     padding: 40px;
 }
 
 .media-nav{
     background-color: #e2e2e22f;
-    height: 200px;
-    width: 50%;
-    margin: 80px auto;
+    height: 850px;
+    width: 100%;
+    margin: 10px auto;
     backdrop-filter: blur(2px);
 }
 
