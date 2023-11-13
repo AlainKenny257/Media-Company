@@ -157,14 +157,13 @@ section .section-content{
 
 #media-content{
     max-width: 100%;
-    background-image: url(/Images/bg.jpg);
-    height: 860px;
-    padding: 40px;
+    height: 960px;
+    padding: 0 10px;
 }
 
 .media-nav{
-    background-color: #e2e2e22f;
-    height: 850px;
+    background-color: #1a1a1a2f;
+    height: 96%;
     width: 100%;
     margin: 10px auto;
     backdrop-filter: blur(2px);
